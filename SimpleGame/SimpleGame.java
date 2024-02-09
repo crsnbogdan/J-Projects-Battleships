@@ -13,7 +13,7 @@ public class SimpleGame {
     private static int gameTurnsCtr = 0;
 
     private static final int MAX_SERPENT_LENGTH = 3;
-    private static final int OCEAN_SIZE = 9;
+    private static final int OCEAN_SIZE = 10;
     private static final int MAX_START_INDEX = OCEAN_SIZE - MAX_SERPENT_LENGTH + 1;
 
     public static void runGame () {
@@ -52,7 +52,6 @@ public class SimpleGame {
     private static void endGame() {
         System.out.println("Congratulations, " + gameUser.getName() + ". You have vanquished the ancient sea serpent in " + gameTurnsCtr + " turns.");
         System.out.println("The oceans are once again safe, thanks to your valor.");
-        scanner.close();
     }
 
     private static int validateInput(int min, int max) {

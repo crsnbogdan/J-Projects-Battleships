@@ -10,7 +10,7 @@ public class ComplexGame {
     private static final int serpentLengths[] = {3, 4, 5};
     private static boolean gameOver = false;
     private static int gameTurnsCtr = 0;
-    private static final int OCEAN_SIZE = 9;
+    private static final int OCEAN_SIZE = 10;
     private static ComplexGameSerpent[] complexGameSerpents = new ComplexGameSerpent[3];
     private static int killedSerpents = 0;
 
@@ -55,7 +55,6 @@ public class ComplexGame {
                 }
             }
 
-            serpent.initializeSerpentPositions();
             int serpentLength = serpent.getSerpentLength();
             int maxPossibleEndCol = OCEAN_SIZE - serpentLength;
             int startColPos = new Random().nextInt(maxPossibleEndCol + 1);
@@ -110,7 +109,6 @@ public class ComplexGame {
     private static void endGame() {
         System.out.println("Congratulations, " + gameUser.getName() + ". You have vanquished the ancient sea serpent in " + gameTurnsCtr + " turns.");
         System.out.println("The oceans are once again safe, thanks to your valor.");
-        scanner.close();
     }
 
     private static int[] validateInput(int min, int max) {

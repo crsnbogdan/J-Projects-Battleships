@@ -31,6 +31,6 @@ public class SimpleGameSerpent {
             }
         }
         serpentSunk = true;
-        return true; // The serpent is fully vanquished
+        return true;
     }
 }

@@ -5,7 +5,6 @@ public class ComplexGameSerpent {
     private int row;
     private int startCol;
     private int endCol;
-    private int[] serpentArr;
     private boolean[] serpentPositions = new boolean[length];
     private boolean serpentSunk = false;
 
@@ -46,10 +45,6 @@ public class ComplexGameSerpent {
         row = rowPos;
         startCol = startColPos;
         endCol = endColPos;
-        serpentArr = new int[endCol];
-        for(int item: serpentArr) {
-            item = 1;
-        }
         System.out.println("A serpent of length " + length + " was created. it is positioned on row " + row + ", starts starts on the column " + startCol + ", and ends on the column " +endCol +".");
     }
 
