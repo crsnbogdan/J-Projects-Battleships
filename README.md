@@ -33,25 +33,17 @@ To play the game, you'll need Java installed on your computer. Follow these step
 
 Clone the project (placeholder URL, replace with your repository if available)
 
-bashCopy code
-
 `git clone https://github.com/your-username/sea-serpent-battleship`
 
 Go to the project directory
-
-bashCopy code
 
 `cd sea-serpent-battleship`
 
 Compile the Java files
 
-bashCopy code
-
 `javac Main.java`
 
 Run the application
-
-bashCopy code
 
 `java Main`
 
